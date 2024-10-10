@@ -23,7 +23,7 @@ function Navbar() {
           <div className="text-white text-2xl font-bold" style={style}>
             <Link to="/" className="flex items-center justify-center gap-1">
               {/* <i className="fa-brands fa-pied-piper text-3xl mt-[1px]"></i> */}
-              <i className="fa-solid fa-camera text-2xl mt-[1px]"></i>
+              <i className="fa-solid fa-camera text-2xl sm:mt-[1px] mt-[-4px]"></i>
               Pixera.
             </Link>
           </div>
@@ -64,7 +64,7 @@ function Navbar() {
         <div className="flex flex-col justify-between h-full">
           <div>
             <div className="text-2xl font-semibold p-4 mx-2 border-b border-slate-700">
-              Clipora.
+              Pixera.
             </div>
             <ul className="space-y-4 p-4">
               <li>
@@ -106,7 +106,7 @@ function Navbar() {
             </ul>
           </div>
           <div className="p-4 mx-2 border-t border-slate-700">
-            <p className="text-sm">© 2024 Clipora.</p>
+            <p className="text-sm">© 2024 Pixera.</p>
           </div>
         </div>
       </div>
