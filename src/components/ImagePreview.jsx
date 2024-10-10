@@ -5,10 +5,7 @@ const ImagePreview = ({ image, onClose, downloadImage }) => {
   if (!image) return null;
 
   return (
-    <div
-      className="z-50 h-full w-full fixed left-1/2 top-1/2 bg-black/70"
-      style={{ transform: "translate(-50%, -50%)" }}
-    >
+    <div className="z-50 h-full w-full fixed left-1/2 top-1/2 bg-black/70  -translate-x-1/2 -translate-y-1/2">
       <div className="shadow-xl bg-white w-[88vw] h-[90vh] max-w-[750px] max-h-[650px] rounded-2xl fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="bg-cyan-200 shadow-md h-[70px] w-full rounded-t-2xl mt-[-2px]">
           <div className="container flex items-center justify-between px-8 h-full gap-2 overflow-hidden">
@@ -50,7 +47,7 @@ const ImagePreview = ({ image, onClose, downloadImage }) => {
 
         <div className="sm:h-[75%] h-[80%] sm:w-[80%] w-[90%] max-w-[600px] flex justify-center items-center absolute left-1/2 top-[56%] -translate-x-1/2 -translate-y-1/2">
           <img
-            className="object-cover size-full rounded-lg shadow-md shadow-black"
+            className="object-contain h-fit w-fit max-h-[100%] max-w-[100%] rounded-md shadow-md shadow-black"
             src={image.src.large2x}
             alt={image.alt}
           />

@@ -6,10 +6,7 @@ const VideoPreview = ({ video, onClose, downloadVideo }) => {
 
   return (
     <>
-      <div
-        className="z-50 h-full w-full fixed left-1/2 top-1/2 bg-black/70"
-        style={{ transform: "translate(-50%, -50%)" }}
-      >
+      <div className="z-50 h-full w-full fixed left-1/2 top-1/2 bg-black/70 -translate-x-1/2 -translate-y-1/2">
         <div className="shadow-xl bg-white w-[88vw] h-[90vh] max-w-[800px] max-h-[650px] rounded-2xl fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="bg-cyan-200 shadow-md h-[70px] w-full rounded-t-2xl mt-[-2px]">
             <div className="container flex items-center justify-between px-8 h-full gap-2 overflow-hidden">
@@ -52,9 +49,9 @@ const VideoPreview = ({ video, onClose, downloadVideo }) => {
             </div>
           </div>
 
-          <div className="h-[75%] w-[80%] max-w-[600px] flex justify-center items-center absolute left-1/2 top-[56%] -translate-x-1/2 -translate-y-1/2">
+          <div className="h-[75%] w-[80%] max-w-[600px] flex justify-center items-center absolute left-1/2 top-[55%] mt-2 -translate-x-1/2 -translate-y-1/2 ">
             <video
-              className="object-cover size-full rounded-lg"
+              className="object-cover h-full w-full rounded-md shadow-md shadow-black "
               src={video.video_files[0].link}
               controls
               autoPlay
