@@ -1,8 +1,6 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home";
-import VideoPage from "./pages/Video";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ContactPage from "./pages/Contact";
@@ -18,7 +16,6 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<ImageGallery />} />
-          {/* <Route path="/images" element={<ImageGallery />} /> */}
           <Route path="videos" element={<VideoGallery />} />
           <Route path="contact" element={<ContactPage />} />
         </Routes>
