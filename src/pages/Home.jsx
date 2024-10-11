@@ -17,8 +17,7 @@ const HomePage = ({ query, setQuery, handleSearch }) => {
           />
           <div className="flex items-center flex-col absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-full gap-10 sm:gap-3">
             <p className="text-[1.6rem] text-pretty font-mono font-bold text-white px-10 text-center leading-[45px] max-w-[800px]">
-              "Discover the high-quality images and videos and download for
-              free."
+              "Discover the high-quality images and download for free."
             </p>
             <form
               onSubmit={handleSearch}
