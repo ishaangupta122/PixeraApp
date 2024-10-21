@@ -39,7 +39,7 @@ const VideoCard = ({ fetchedVideos = [] }) => {
     <>
       {fetchedVideos.map((item, index) => (
         <div
-          className="relative sm:h-[75vh] h-[45vh] max-h-[600px] rounded-md overflow-hidden shadow-lg shadow-black/55 transition-transform duration-300 transform hover:scale-[1.01] cursor-pointer"
+          className="relative sm:h-[65vh] h-[45vh] max-h-[450px] rounded-md overflow-hidden shadow-lg shadow-black/55 transition-transform duration-300 transform hover:scale-[1.01] cursor-pointer"
           onMouseEnter={() => {
             setIsHovered(item.id);
             if (videoRefs.current[index]) {
